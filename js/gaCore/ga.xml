@@ -48,7 +48,7 @@ response.object = request.header("GData-Version", "2").header("Authorization", "
     </select>
     <select>
       <urls>
-        <url>https://www.googleapis.com/analytics/v2.4/management/accounts</url>
+        <url>https://www.googleapis.com/analytics/v2.4/management</url>
       </urls>
       <inputs>
         <key id="auth" paramType="variable" required="true"/>
