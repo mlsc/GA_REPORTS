@@ -43,8 +43,8 @@
         var Email = email;
         var Passwd = password;
 
-        var query = "use 'http://github.com/yql/yql-tables/raw/master/google/google.analytics.xml' as ga; select * from ga where Email='" + Email + "' and Passwd='" + password + "'";
-        //var query = "use 'google.analytics.xml' as ga; select * from ga where Email='" + Email + "' and Passwd='" + password + "'";
+		//var query = "use 'http://github.com/yql/yql-tables/raw/master/google/google.analytics.xml' as ga; select * from ga where Email='" + Email + "' and Passwd='" + password + "'";
+        var query = "use 'https://raw.github.com/mlsc/GA_REPORTS/master/js/gaCore/ga.xml' as ga; select * from ga where Email='" + Email + "' and Passwd='" + password + "'";
 		var yql = "http://query.yahooapis.com/v1/public/yql?q="+encodeURIComponent(query)+"&format=json";
 		
 		
