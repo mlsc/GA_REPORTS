@@ -29,12 +29,10 @@
             return false;
         }
 
-        auth = encodeURIComponent(auth);
+        
 
         var query = "use 'https://raw.github.com/mlsc/GA_REPORTS/master/js/gaCore/ga.xml' as ga; select * from ga where auth='" + auth + "'";
-		var yql = "http://query.yahooapis.com/v1/public/yql?q="+ query +"&format=json";
-
-		Debug.log(yql);
+		var yql = "http://query.yahooapis.com/v1/public/yql?q="+encodeURIComponent(query)+"&format=json";
 
 		$.getJSON( yql, function(data){
 			Debug.log(data);
