@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="it">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>JWT - Analytics Report</title>
+	<meta name="author" content="Cesare Malescia">
+
+	<link rel="stylesheet" href="css/960_css/css/reset.css" />
+	<link rel="stylesheet" href="css/960_css/css/text.css" />
+	<link rel="stylesheet" href="css/960_css/css/960_24_col.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+ 	
+	<script src="js/lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+	<script src="js/utils/debug.js"></script>
+	<script src="js/gaCore/login.js"></script>
+	<script src="js/gaCore/account.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+<body>
+
+	<div class="container_24">
+
+
+		<div class="grid_12 debug">
+			<form id="login" action="javascript:void(0)">
+			    <div>
+			    	<input id="user" type="text" />
+			    	<input id="pwd" type="password" />
+			 		<input type="submit" />
+			    </div>
+			</form>
+		</div>	
+
+		<div class="clear"></div>
+		<div id="login_result" class="grid_12 debug" ></div>
+
+		<div class="clear"></div>
+		<div class="grid_12 debug">
+			<form id="account" action="javascript:void(0)">
+			    <div>
+			    	<textarea id="token" rows="5" cols="40"></textarea>
+			    	<input type="submit" />
+			    </div>
+			</form>
+		</div>	
+
+		<div class="clear"></div>
+		<div id="chart_div" class="grid_24 debug" ></div>
+
+
+
+
+	</div>	
+
+
+
+
+
+
+
+
+
+
+  
+  
+</body>
+</html>

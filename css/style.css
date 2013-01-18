@@ -1,0 +1,14 @@
+body {
+  font-size: 11px;
+}
+
+/***** DEBUG *****/
+.container_24 {
+  border:1px solid blue;
+  min-height: 500px;
+}
+
+.debug{
+  border:1px solid red;
+}
+
