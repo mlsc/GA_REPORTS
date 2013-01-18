@@ -48,13 +48,13 @@ response.object = request.header("GData-Version", "2").header("Authorization", "
     </select>
     <select>
       <urls>
-        <url>https://www.googleapis.com/analytics/v2.4/management/accounts</url>
+        <url>https://www.googleapis.com/analytics/v2.4/management/accounts/~all/webproperties/~all/profiles</url>
       </urls>
       <inputs>
         <key id="auth" paramType="variable" required="true"/>
       </inputs>
       <execute><![CDATA[
-response.object = request.contentType("application/x-www-form-urlencoded").header("GData-Version", "2").header("Authorization", "GoogleLogin Auth=" + auth).get().response;
+response.object = request.header("GData-Version", "2").header("Authorization", "GoogleLogin Auth=" + auth).get().response;
 ]]></execute>
     </select>
   </bindings>
