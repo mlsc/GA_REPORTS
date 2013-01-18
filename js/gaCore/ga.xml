@@ -54,7 +54,7 @@ response.object = request.header("GData-Version", "2").header("Authorization", "
         <key id="auth" paramType="variable" required="true"/>
       </inputs>
       <execute><![CDATA[
-response.object = request.header("GData-Version", "2").header("Authorization", "GoogleLogin Auth=" + auth).post().response;
+response.object = request.header("GData-Version", "2").header("Authorization", "GoogleLogin Auth=" + auth).get().response;
 ]]></execute>
     </select>
   </bindings>
